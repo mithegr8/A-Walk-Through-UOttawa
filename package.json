@@ -1,0 +1,9 @@
+{
+  "name": "a-walk-through-uottawa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Campus walking map with server-held Google Street View key",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

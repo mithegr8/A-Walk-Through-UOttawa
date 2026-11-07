@@ -1,0 +1,16 @@
+{
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/streetview", "destination": "/api/streetview" },
+    { "source": "/api/streetview/status", "destination": "/api/streetview-status" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ]
+}
